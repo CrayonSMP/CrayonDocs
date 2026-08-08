@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'XiaoMoMi Plugins',
+  title: 'CrayonSMP - Wiki',
 
   favicon: 'img/favicon.png',
 
@@ -18,15 +18,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://momirealms.net',
+  url: 'https://wiki.crayonsmp.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/craft-engine-wiki/',
+  baseUrl: '/crayonsmp-wiki/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Xiao-MoMi', // Usually your GitHub org/user name.
-  projectName: 'craft-engine-wiki', // Usually your repo name.
+  organizationName: 'CrayonSMP', // Usually your GitHub org/user name.
+  projectName: 'CrayonDocs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -63,7 +63,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans'],
+    locales: ['en'],
   },
 
   presets: [
@@ -71,9 +71,9 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/Xiao-MoMi/craft-engine-wiki/edit/main/',
+          editUrl: 'https://github.com/CrayonSMP/CrayonDocs/edit/main/',
           editLocalizedFiles: true,
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -89,7 +89,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     navbar: {
-      title: 'XiaoMoMi Plugins',
+      title: 'CrayonSMP Wiki',
       logo: {
         src: 'img/logo.svg',
         width: 32,
@@ -97,22 +97,11 @@ const config: Config = {
       },
       items: [
         {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          href: 'https://discord.gg/xiaomomi',
+          href: 'https://discord.gg/cdhWC3XkR8',
           label: 'Discord',
           position: 'right',
           className: 'navbar-discord-link',
           'aria-label': 'Discord',
-        },
-        {
-          href: 'https://qm.qq.com/q/OrZULZbRKO',
-          label: 'QQ',
-          position: 'right',
-          className: 'navbar-qq-link',
-          'aria-label': 'QQ',
         },
       ],
     },
@@ -141,7 +130,7 @@ const config: Config = {
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
-        language: ["en", "zh"],
+        language: ["en"],
         searchBarShortcutKeymap: "ctrl+shift+f",
         docsRouteBasePath: "/",
       }),
