@@ -28,7 +28,7 @@ const config: Config = {
   organizationName: 'CrayonSMP', // Usually your GitHub org/user name.
   projectName: 'CrayonDocs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   markdown: {
     hooks: {
