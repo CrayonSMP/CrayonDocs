@@ -17,7 +17,7 @@ const sidebars: SidebarsConfig = {
   {
     type: 'doc',
     id: "intro",
-    label: '📗 Introduction',
+    label: '👋 Welcome',
   },
 ],
 };
