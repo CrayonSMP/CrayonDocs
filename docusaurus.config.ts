@@ -21,7 +21,7 @@ const config: Config = {
   url: 'https://wiki.crayonsmp.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/crayonsmp-wiki/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -75,8 +75,8 @@ const config: Config = {
           routeBasePath: '/',
           editUrl: 'https://github.com/CrayonSMP/CrayonDocs/edit/main/',
           editLocalizedFiles: true,
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
         },
         blog: false,
         theme: {
