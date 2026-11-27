@@ -5,9 +5,9 @@ slug: /
 sidebar_label: 👋 Welcome
 sidebar_position: 1
 ---
-
 # CrayonSMP
-## A Collaborative Sandbox SMP
+
+## A Collaborative Sandbox
 
 CrayonSMP is a private, application-based SMP where every single player directly shapes the world. No empty promises—we give you the actual tools to build the game alongside us.
 
@@ -27,6 +27,7 @@ Everything you add must fit into a survival-friendly, balanced environment. We l
 
 ## Quick Links
 
-- [**GitHub**](https://github.com/CrayonSMP) — Check out our open-source tools and setup.
+- **[GitHub](https://github.com/CrayonSMP)** — Check out our open-source tools and setup.
 
 > *"Don't just live in the world – help build it!"*
+
