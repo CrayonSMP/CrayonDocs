@@ -8,6 +8,8 @@ media:
 settings:
   commit:
     identity: user # Commits zeigen, wer geschrieben hat
+  content:
+    merge: true # beim Speichern bleiben id, slug, sidebar_position usw. erhalten
 
 content:
   - name: wiki
