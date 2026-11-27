@@ -21,7 +21,7 @@ Instead of just playing passively, you can actively contribute your own content 
 
 :::info
 
-Everything you add must fit into a survival-friendly, balanced environment. We love immersive, custom-coded features—like custom-coded Waystones inspired by mods—rather than lazy `/warp` commands.
+Everything you add must fit into a survival-friendly, balanced environment. We love immersive, custom-coded features—like custom-made Waystones inspired by mods—rather than lazy `/warp` commands.
 
 :::
 
