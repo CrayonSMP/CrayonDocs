@@ -4,6 +4,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Adresse eurer Pages-CMS-Installation
+const CMS_URL = 'https://cms.crayonsmp.com';
+const REPO = 'CrayonSMP/CrayonDocs';
+
 const config: Config = {
   title: 'CrayonSMP - Wiki',
 
@@ -31,8 +35,12 @@ const config: Config = {
   onBrokenLinks: 'warn',
 
   markdown: {
+    // .md = normales Markdown (Pages CMS), .mdx = MDX mit Komponenten
+    format: 'detect',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
+      // ein fehlendes Bild soll nicht den ganzen Build abbrechen
+      onBrokenMarkdownImages: 'warn',
     }
   },
 
@@ -73,7 +81,11 @@ const config: Config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/CrayonSMP/CrayonDocs/edit/main/',
+          // .md-Seiten öffnen im CMS, .mdx-Seiten weiterhin auf GitHub
+          editUrl: ({docPath}) =>
+            docPath.endsWith('.md')
+              ? `${CMS_URL}/${REPO}/main/collection/wiki/edit/${encodeURIComponent(`docs/${docPath}`)}`
+              : `https://github.com/${REPO}/edit/main/docs/${docPath}`,
           editLocalizedFiles: true,
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
