@@ -5,6 +5,8 @@ slug: /
 sidebar_label: 👋 Welcome
 sidebar_position: 1
 ---
+![sunset.png](/img/wiki/sunset.png)
+
 # CrayonSMP
 
 ## A Collaborative Sandbox
