@@ -6,9 +6,6 @@ sidebar_label: 👋 Welcome
 sidebar_position: 1
 ---
 
-import ColoredLink from '@site/src/components/ColoredLink';
-import Highlight from '@site/src/components/Highlight';
-
 # CrayonSMP
 ## A Collaborative Sandbox SMP
 
@@ -30,6 +27,6 @@ Everything you add must fit into a survival-friendly, balanced environment. We l
 
 ## Quick Links
 
-- <Highlight color="#1785c5ff"><ColoredLink to="https://github.com/CrayonSMP" color="#ffffff">**GitHub**</ColoredLink></Highlight> — Check out our open-source tools and setup.
+- [**GitHub**](https://github.com/CrayonSMP) — Check out our open-source tools and setup.
 
 > *"Don't just live in the world – help build it!"*
