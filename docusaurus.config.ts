@@ -84,8 +84,8 @@ const config: Config = {
           // .md-Seiten öffnen im CMS, .mdx-Seiten weiterhin auf GitHub
           editUrl: ({docPath}) =>
             docPath.endsWith('.md')
-              ? `${CMS_URL}/${REPO}/main/collection/wiki/edit/${encodeURIComponent(`docs/${docPath}`)}`
-              : `https://github.com/${REPO}/edit/main/docs/${docPath}`,
+              ? `${CMS_URL}/${REPO}/draft/collection/wiki/edit/${encodeURIComponent(`docs/${docPath}`)}`
+              : `https://github.com/${REPO}/edit/draft/docs/${docPath}`,
           editLocalizedFiles: true,
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
