@@ -1,0 +1,28 @@
+# Konfiguration für Pages CMS (https://pagescms.org/docs)
+media:
+  input: static/img/wiki
+  output: /img/wiki
+  categories: [image]
+  rename: safe
+
+settings:
+  commit:
+    identity: user # Commits zeigen, wer geschrieben hat
+
+content:
+  - name: wiki
+    label: Wiki
+    type: collection
+    path: docs
+    filename: "{primary}.md"
+    view:
+      fields: [title]
+      primary: title
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: body
+        label: Inhalt
+        type: rich-text
